@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        height: 80%;
+        width: 200px;
+        margin-left: 20%;
+    }
+
+    .pages{
+        height: 80%;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 10%;
+
+        .Link{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.727);
+            font-style: italic;
+            font-weight: 600;
+
+            &:hover{
+                font-weight: bolder;
+                font-size: 32px;
+                color: rgb(1, 153, 255);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+
+    .main{
+        width: 80%;
+        margin: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        form{
+
+            width: 50%;
+            padding-left: 15%;
+
+            label{
+                color: rgb(76, 70, 255);
+            }
+
+            input[name="value"]{
+                height: 35px;
+                width: 70%;
+                border-radius: 5px;
+                border: 1px solid rgba(0, 0, 0, 0.505);
+                padding: 0px 0px 0px 15px;
+
+                &:focus::placeholder{
+                    color: transparent;
+                }
+            }
+
+            .form-control{
+                margin: 10px 0px;
+
+                #profile{
+                    font-size: 14px;
+                    color: rgba(128, 128, 128, 0.637);
+                    font-weight: 400;
+                }
+            }
+
+            .action{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                .btn{
+                    margin-right: 26.5%;
+                    button{
+                        height: 28px;
+                        width: 100px;
+                        border-radius: 5px;
+                        background-color: rgba(76, 70, 255, 0.583);
+                        color: white;
+                        border: none;
+                        transition: all 0.3s;
+
+                        &:hover{
+                            height: 30px;
+                            width: 110px;
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(76, 70, 255);
+                        }
+                    }
+                    .btn-profile{
+                        height: 28px;
+                        width: 70px;
+                        border-radius: 5px;
+                        background-color: rgba(76, 70, 255, 0.583);
+                        color: white;
+                        border: none;
+                        transition: all 0.3s;
+                        margin-right: 10px;
+                        &:hover{
+                            height: 30px;
+                            width: 80px;
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(76, 70, 255);
+                        }
+                    }
+
+                    .cancel{
+                        background-color: white;
+                        color: rgb(76, 70, 255);
+                    }
+                }
+
+                label[name='show']{
+                    transition: 0.5s all;
+
+                    &:hover{
+                        font-size: 18px;
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
