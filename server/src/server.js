@@ -33,6 +33,30 @@ app.get("/api/users", (req, res) => {
   });
 });
 
+app.put("/api/users/update", (req, res) => {
+  let data = req.body;
+  // console.log(data);
+  let newData = {
+    Fullname: data.Fullname,
+    DayOfBirth: data.DayOfBirth,
+    Email: data.Email,
+    Phone: data.Phone,
+    password: data.password,
+  };
+
+  console.log(newData);
+
+  let sql = "UPDATE users SET ? WHERE `id_user` = ?";
+  db.query(sql, [newData, data.id_user], (err, data) => {
+    if (data) {
+      let sql1 = "SELECT * FROM `users`";
+      db.query(sql1, (err, d) => {
+        res.json(d);
+      });
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Ung dung dang chay voi port ${port}`);
 });

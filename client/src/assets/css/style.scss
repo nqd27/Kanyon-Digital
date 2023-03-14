@@ -55,6 +55,21 @@
         flex-direction: column;
         align-items: center;
 
+        #img-login{
+            height: 300px;
+        }
+
+        #pages{
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(76, 70, 255);
+            transition: all 0.3s;
+
+            &:hover{
+                color:rgb(26, 20, 214);
+            }
+        }
+
         form{
 
             width: 50%;
@@ -139,6 +154,77 @@
                         font-size: 18px;
                         color: blue;
                     }
+                }
+            }
+        }
+    }
+
+    .main-profile{
+        height: 600px;
+        width: 80%;
+        margin: 5% 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .left-box{
+            height: 100%;
+            width: 30%;
+            padding-left: 50px;
+
+            img{
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                margin-left: 6%;
+                margin-top: 5%;
+            }
+        }
+        .right-box{
+            height: 100%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                text-align: center;
+            }
+
+            .message{
+                font-size: 18px;
+                padding: 0 0 0 10%;
+
+                .control{
+                    margin: 25px;
+                    span{
+                        width: 100px;
+                        display: inline-block;
+                    }
+
+                    b{
+                        margin-left: 25px;
+                        font-size: 22px;
+                    }
+                    
+                }
+
+                
+            }
+            .btnUpdate{
+                height: 32px;
+                width: 100px;
+                border-radius: 5px;
+                background-color: rgba(76, 70, 255, 0.583);
+                color: white;
+                border: none;
+                transition: all 0.3s;
+                margin-right: 10px;
+                &:hover{
+                    height: 35px;
+                    width: 110px;
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(76, 70, 255);
                 }
             }
         }
