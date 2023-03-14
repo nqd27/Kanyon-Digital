@@ -104,7 +104,7 @@ function Login() {
                 <Nav />
                 <div className="container">
                     <div className="main">
-                        <h1>Đăng nhập thành công!</h1>
+                        <h1>Logged in successfully!</h1>
                         <h3>- Go to <Link to='/profile' id='pages'>Profile</Link></h3>
                         <img id='img-login' src="./src/assets/images/login.gif" alt="" />
                     </div>
